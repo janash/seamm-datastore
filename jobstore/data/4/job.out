@@ -1,0 +1,65 @@
+Running in directory '/Users/jessica/seamm/misc/flowcharts/demos/../../../jobs/4'
+
+Description of the flowchart
+----------------------------
+Step 0: Start  0.6.2
+
+Step 1: from SMILES  0.6.2
+    Create the structure from the SMILES 'c1ccccc1'
+
+Step 2: MOPAC  0.1.0
+
+   Step 2.1: Optimization
+       Geometry optimization using PM7 and default optimizer (EF for small systems,
+       L-BFGS for larger). The geometrical convergence is 1.0 kcal/mol/Å
+       kcal/mol/Å. The SCF will be converged to the 'precise' level of 1.0e-06
+       kcal/mol
+
+   Step 2.2: Thermodynamics
+       Thermodynamics calculation using PM7, converged to the 'normal' level of
+       1.0e-04 kcal/mol. The thermodynamics functions will be calculated from 200.0
+       K to 400.0 K in steps of 10.0 K. 0 lowest modes will be ignored to
+       approximately account for 0 internal rotations.
+
+
+Step 3: Table  0.6
+    print table
+
+
+Running the flowchart
+---------------------
+Step 0: Start  0.6.2
+
+Step 1: from SMILES  0.6.2
+    Create the structure from the SMILES 'c1ccccc1'
+    Created a molecular structure with 12 atoms.
+
+   Step 2.1: Optimization
+       Step 2.1: Optimization
+           Geometry optimization using PM7 and default optimizer (EF for small systems,
+           L-BFGS for larger). The geometrical convergence is 1.0 kcal/mol/Å
+           kcal/mol/Å. The SCF will be converged to the 'precise' level of 1.0e-06
+           kcal/mol
+
+
+       The geometry optimization converged in 9 iterations to a heat of
+       formation of 22.9565 kcal/mol and gradient norm of 0.0385706 kcal/mol/Å.
+
+
+   Step 2.2: Thermodynamics
+       Step 2.2: Thermodynamics
+           Thermodynamics calculation using PM7, converged to the 'normal' level of
+           1.0e-04 kcal/mol. The thermodynamics functions will be calculated from 200.0
+           K to 400.0 K in steps of 10.0 K. 0 lowest modes will be ignored to
+           approximately account for 0 internal rotations.
+
+
+       The geometry converged in 2 iterations to a heat of formation of 22.9565
+       kcal/mol.
+
+
+
+
+Table 'results':
+      area    dipole  heat_of_formation  ionization_potential   volume  zero_point_energy
+0  119.697  0.000004            22.9565                9.8241  108.363          60.594652

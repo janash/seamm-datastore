@@ -1,0 +1,174 @@
+Summary of statistics for T n_step = 2
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      T   R-squared:                       0.003
+Model:                            OLS   Adj. R-squared:                  0.001
+Method:                 Least Squares   F-statistic:                     1.332
+Date:                Fri, 20 Sep 2019   Prob (F-statistic):              0.249
+Time:                        15:14:07   Log-Likelihood:                -1864.3
+No. Observations:                 501   AIC:                             3733.
+Df Residuals:                     499   BIC:                             3741.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        131.2304      0.894    146.840      0.000     129.475     132.986
+x1         -1.786e-05   1.55e-05     -1.154      0.249   -4.83e-05    1.25e-05
+==============================================================================
+Omnibus:                     1109.751   Durbin-Watson:                   2.260
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):          2672718.642
+Skew:                          17.416   Prob(JB):                         0.00
+Kurtosis:                     359.120   Cond. No.                     1.15e+05
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.15e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Summary of statistics for P n_step = 2
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      P   R-squared:                       0.007
+Model:                            OLS   Adj. R-squared:                  0.005
+Method:                 Least Squares   F-statistic:                     3.304
+Date:                Fri, 20 Sep 2019   Prob (F-statistic):             0.0697
+Time:                        15:14:07   Log-Likelihood:                -4438.1
+No. Observations:                 501   AIC:                             8880.
+Df Residuals:                     499   BIC:                             8889.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        255.2138    152.149      1.677      0.094     -43.717     554.144
+x1            -0.0048      0.003     -1.818      0.070      -0.010       0.000
+==============================================================================
+Omnibus:                     1227.269   Durbin-Watson:                   0.894
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):          4976555.049
+Skew:                          21.991   Prob(JB):                         0.00
+Kurtosis:                     489.275   Cond. No.                     1.15e+05
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.15e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Summary of statistics for Etot n_step = 2
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   Etot   R-squared:                       0.007
+Model:                            OLS   Adj. R-squared:                  0.005
+Method:                 Least Squares   F-statistic:                     3.408
+Date:                Fri, 20 Sep 2019   Prob (F-statistic):             0.0655
+Time:                        15:14:07   Log-Likelihood:                -3783.2
+No. Observations:                 501   AIC:                             7570.
+Df Residuals:                     499   BIC:                             7579.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const       -480.5353     41.166    -11.673      0.000    -561.415    -399.656
+x1            -0.0013      0.001     -1.846      0.065      -0.003    8.46e-05
+==============================================================================
+Omnibus:                     1223.272   Durbin-Watson:                   0.834
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):          4869216.203
+Skew:                          21.822   Prob(JB):                         0.00
+Kurtosis:                     483.990   Cond. No.                     1.15e+05
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.15e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Summary of statistics for Eke n_step = 2
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    Eke   R-squared:                       0.003
+Model:                            OLS   Adj. R-squared:                  0.001
+Method:                 Least Squares   F-statistic:                     1.332
+Date:                Fri, 20 Sep 2019   Prob (F-statistic):              0.249
+Time:                        15:14:07   Log-Likelihood:                -2411.0
+No. Observations:                 501   AIC:                             4826.
+Df Residuals:                     499   BIC:                             4834.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        390.7819      2.661    146.840      0.000     385.553     396.011
+x1         -5.318e-05   4.61e-05     -1.154      0.249      -0.000    3.73e-05
+==============================================================================
+Omnibus:                     1109.751   Durbin-Watson:                   2.260
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):          2672711.106
+Skew:                          17.416   Prob(JB):                         0.00
+Kurtosis:                     359.119   Cond. No.                     1.15e+05
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.15e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Summary of statistics for Epe n_step = 1
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    Epe   R-squared:                       0.004
+Model:                            OLS   Adj. R-squared:                  0.003
+Method:                 Least Squares   F-statistic:                     3.714
+Date:                Fri, 20 Sep 2019   Prob (F-statistic):             0.0542
+Time:                        15:14:07   Log-Likelihood:                -7214.8
+No. Observations:                1001   AIC:                         1.443e+04
+Df Residuals:                     999   BIC:                         1.444e+04
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const       -909.6805     20.648    -44.056      0.000    -950.200    -869.161
+x1            -0.0007      0.000     -1.927      0.054      -0.001    1.26e-05
+==============================================================================
+Omnibus:                     2721.824   Durbin-Watson:                   0.825
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         39444815.462
+Skew:                          31.004   Prob(JB):                         0.00
+Kurtosis:                     973.507   Cond. No.                     1.15e+05
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.15e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Summary of statistics for Epair n_step = 1
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  Epair   R-squared:                       0.004
+Model:                            OLS   Adj. R-squared:                  0.003
+Method:                 Least Squares   F-statistic:                     3.714
+Date:                Fri, 20 Sep 2019   Prob (F-statistic):             0.0542
+Time:                        15:14:07   Log-Likelihood:                -7214.8
+No. Observations:                1001   AIC:                         1.443e+04
+Df Residuals:                     999   BIC:                         1.444e+04
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const       -909.6805     20.648    -44.056      0.000    -950.200    -869.161
+x1            -0.0007      0.000     -1.927      0.054      -0.001    1.26e-05
+==============================================================================
+Omnibus:                     2721.824   Durbin-Watson:                   0.825
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         39444815.462
+Skew:                          31.004   Prob(JB):                         0.00
+Kurtosis:                     973.507   Cond. No.                     1.15e+05
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.15e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
