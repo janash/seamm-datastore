@@ -2,13 +2,11 @@
 jobstore.py
 Tools for storing jobs from MolSSI SEAMM
 
-Handles the primary functions
+Has the SEAMM datastore class.
 """
 
 import os
 import glob
-import json
-import hashlib
 
 from contextlib import contextmanager
 from datetime import datetime
@@ -74,6 +72,13 @@ class DataStore():
             if not found:
                 session.add(flowchart)
         
+    def get_flowchart(self, flowchart_id=None):
+        
+        with self.get_session_scope() as session:
+            if flowchart_id:
+                return session.query(Flowchart).filter_by(flowchart_id).all()
+            else:
+                return session.query(Flowchart).all()
 
     def add_job(self, job_path):
         """Add a job to the datastore. A unique job is based on directory location.
