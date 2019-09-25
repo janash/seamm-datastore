@@ -72,13 +72,14 @@ class DataStore():
             if not found:
                 session.add(flowchart)
         
-    def get_flowchart(self, flowchart_id=None):
+    def get_flowchart_file(self, flowchart_id=None):
         
         with self.get_session_scope() as session:
             if flowchart_id:
-                return session.query(Flowchart).filter_by(flowchart_id).all()
+                return session.query(Flowchart.flowchart_file).filter_by(flowchart_id).all()
             else:
-                return session.query(Flowchart).all()
+                ret = session.query(Flowchart.flowchart_file).all()
+                return ret
 
     def add_job(self, job_path):
         """Add a job to the datastore. A unique job is based on directory location.

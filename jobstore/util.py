@@ -4,6 +4,9 @@ util.py
 Utility functions.
 """
 
+import os
+import json
+import hashlib
 
 def process_flowchart(flowchart_path):
     """Read in flowchart from file and process for addition to SEAMM datastore.
