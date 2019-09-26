@@ -42,6 +42,5 @@ class Project(Base):
 class JobProject(Base):
     __tablename__ = "project_jobs"
 
-    id = Column(Integer, primary_key=True)
-    job_path = Column(String, ForeignKey('jobs.path'))
-    project = Column(String, ForeignKey('projects.name'))
+    job_path = Column(String, ForeignKey('jobs.path'), primary_key=True)
+    project = Column(String, ForeignKey('projects.name', primary_key=True))
