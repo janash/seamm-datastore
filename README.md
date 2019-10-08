@@ -46,6 +46,18 @@ Current table structure:
 
 `users` table
 -------------
+*Description* - This table contains user information for accessing the database. Will be used eventually to limit which users can access jobs/projects.
+
+- `username` - The username of the user (primary key)
+- `email` - The email address of the user
+- `password` - The password of the user (will be hashed)
+
+`user_projects` table
+---------------------
+*Description* - This table links users with projects.
+
+- `user` - The username of user (primary key, foreign key in users.username)
+- `project` - The name of a project (primary key, foreign key in projets.name)
 
 
 ### Copyright
