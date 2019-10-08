@@ -15,25 +15,38 @@ Current table structure:
 
 `flowcharts` table
 ------------------
+*Description* - This table holds information about the flowcharts used in jobs.
+
 - `id` - The flowchart id - based on a hash of the flowchart text (primary key)
 - `description` - A description of the flowchart (optional)
 - `flowchart_file` - The text (json) of the flowchart
 
 `jobs` table
 ------------
+*Description* - This table holds information about the jobs which have been run. Jobs are identified by the presence of a `job.out` file and a flowchart being present in a directory.
+
 - `path` - The location (path) of the job (primary key)
 - `flowchart_id` - The flowchart ID (foreign key `flowcharts.id`)
 - `submission_date` - The date and time the flowchart was run. Currently based on the last modification date of the `flowcharts.flow` file.
+- `author` - (optional column) - The person who submitted the job.
 
 `projects` table
 ----------------
+*Description* - This table holds information about projects. In this table, the projects are not associated with any jobs.
+
 - `name` - The name of the project. Limited to 100 characters. (primary key)
 - `description` - A description of the project. Limited to 1000 characters
 
 `project_jobs` table
 --------------------
+*Description* - This table links jobs (from `jobs` table) with projects (from `projects` table).
+
 - `job_path` - The location of a job (foreign key `jobs.path`, primary key)
 - `project` - The project name (foreign key `projects.name`, primary key)
+
+`users` table
+-------------
+
 
 ### Copyright
 
