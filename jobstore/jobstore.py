@@ -14,7 +14,7 @@ from datetime import datetime
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, relationship
 
-from .model import Base, Flowchart, Job, Project, JobProject
+from .models import Base, Flowchart, Job, Project, JobProject
 from .util import process_flowchart, process_job
 
 
@@ -102,5 +102,5 @@ class DataStore():
             with self.get_session_scope() as session:
                 session.add(job)
         else:
-            print("No job found in directory {}. No job added to data store".format(os.path.abspath(job_path)))
+            print("No job found in directory {}. No job added to data store".format(job_path))
     
