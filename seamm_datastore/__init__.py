@@ -4,7 +4,9 @@ The database models for the seamm datastore
 """
 
 # Add imports here
-from .seamm_datastore import *
+from .make_db import connect
+
+__all__ = ['connect',]
 
 # Handle versioneer
 from ._version import get_versions

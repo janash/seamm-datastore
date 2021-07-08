@@ -1,18 +1,26 @@
-name: test
+name: seamm-datastore
 channels:
 
   - conda-forge
 
   - defaults
 dependencies:
-    # Base depends
-  - python
+  - python>=3.8
   - pip
+  - pip:
+    - flask
+    - flask-authorize
+    - sqlalchemy
+    - marshmallow_sqlalchemy
+    # For testing:
+    - pytest
+    - pytest-cov
+    - pytest-mock
+    # For development
+    - black
+    - flake8
+    - twine
 
-    # Testing
-  - pytest
-  - pytest-cov
-  - codecov
 
     # Pip-only installs
   #- pip:
