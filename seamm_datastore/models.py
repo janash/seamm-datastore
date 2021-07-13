@@ -16,8 +16,17 @@ from .flask_authorize_patch import (
     generate_association_table,
 )
 
-# Create declarative base
-Base = declarative_base()
+try:
+    from .db_util import fake_app
+
+    # Create declarative base
+    Base = declarative_base()
+except ImportError:
+    # Assume we're being used with flask_sqlalchemy in the seamm dashboard
+    from seamm_dashboard import db
+
+    Base = db.Model
+
 
 #############################
 #

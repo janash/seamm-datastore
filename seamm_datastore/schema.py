@@ -7,7 +7,7 @@ Marshmallow models for serialization and deserialization.
 from marshmallow_sqlalchemy import SQLAlchemyAutoSchema
 from marshmallow_sqlalchemy.fields import Related, Nested
 
-from .models import Flowchart, Project, Job, User, Grroup, Role
+from .models import Flowchart, Project, Job, User, Group, Role
 
 #############################
 #

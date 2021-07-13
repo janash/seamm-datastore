@@ -25,6 +25,17 @@ from flask_authorize.plugin import (
 
 from flask import current_app
 
+try:
+    from .db_util import fake_app
+    from flask_authorize import mixins
+
+    mixins.current_app = fake_app
+    current_app = fake_app
+
+except ImportError:
+    # Assume we're being used with flask_sqlalchemy
+    pass
+
 __all__ = ["generate_association_table", "AccessControlPermissionsMixin"]
 
 
